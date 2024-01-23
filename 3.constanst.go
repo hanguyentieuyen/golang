@@ -5,10 +5,11 @@ import (
 )
 
 const (
-	red   = 0
-	blue  = 1
-	black = 2
-	white = 0
+	_ = 1 << iota // dịch bit <<
+	red
+	blue
+	black
+	white
 )
 const num = 13
 
@@ -18,6 +19,9 @@ func main() {
 	fmt.Printf("%v, %T\n", i, i)
 	fmt.Printf("%v, %T\n", num, num)
 	fmt.Printf("%v, %T\n", red, red)
+	fmt.Printf("%v, %T\n", blue, blue)
+	fmt.Printf("%v, %T\n", black, black)
+
 }
 
 // 1. Định nghĩa hằng số
@@ -25,3 +29,4 @@ func main() {
 // 3. Đặc điểm của hằng số: hằng số bên trong block scope sẽ che (shadow)
 // 						 lên hằng số global
 // 4. kiểu enum: tập hợp nhiều hằng số
+// 5. Tự động khởi tạo giá trị cho Enum bằng iota
