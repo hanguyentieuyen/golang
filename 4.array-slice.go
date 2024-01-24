@@ -11,4 +11,10 @@ func main() {
 	fmt.Printf("%v,%T\n", newArr[1], newArr)
 	fmt.Printf("%v,%T\n", points, points)
 	fmt.Println(len(points))
+
+	a := [3]int{2, 5, 10}
+	b := &a
+	b[1] = 20
+	fmt.Println(a)
+	fmt.Println(b)
 }
