@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+	// array
 	var newArr [3]int
 	newArr[1] = 10
 	points := [...]int{1, 2, 3, 4}
@@ -17,4 +18,6 @@ func main() {
 	b[1] = 20
 	fmt.Println(a)
 	fmt.Println(b)
+
+	// slice
 }
